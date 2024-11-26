@@ -1,0 +1,7 @@
+privacy poliy
+paragraph 5 
+
+
+main webpage -contact card-add contact number
+update api key of contact form
+update contact page

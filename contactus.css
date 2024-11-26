@@ -1,0 +1,122 @@
+/* Base styles for general responsiveness */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navbar .logo a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.contact-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.submit-button, .cancel-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-button {
+  background-color: #ff0078;
+}
+
+.cancel-button {
+  background-color: transparent;
+  border: 2px solid #ff0078;
+  color: #ff0078;
+}
+
+/* Media Query for devices smaller than 768px (typically tablets and phones) */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+
+  .submit-button, .cancel-button {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+
+  .menu__item {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .social-icon__item {
+    margin: 10px;
+  }
+}
+
+/* For very small screens like smartphones */
+@media only screen and (max-width: 480px) {
+  .contact-title {
+    font-size: 1.5em;
+  }
+
+  .menu__link {
+    font-size: 1.2em;
+  }
+
+  .footer {
+    font-size: 0.8em;
+  }
+
+  .input-field {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .submit-button, .cancel-button {
+    font-size: 1.2em;
+    padding: 12px;
+  }
+}
