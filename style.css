@@ -874,45 +874,52 @@ img {
     width: 100%;
 }
 
+.main-containerfr {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 .containerfr {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Add spacing between boxes */
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-/* Styling for individual cards */
 .cardfr {
-    width: 300px; /* Equal size for all boxes */
+    width: 300px; /* Ensures all boxes are the same size */
     min-height: 200px;
     background-color: #CCAFAF;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
     padding: 20px;
 }
-/* Box inside each card */
-.card-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
 
 .boxfr {
     padding: 20px;
 }
+
 /* Arrow Image Styling */
 .arrow-down {
     display: block;
     width: 30px; /* Adjust size as needed */
     height: auto;
-    margin-top: 10px; /* Add spacing between box and arrow */
+    margin: 10px auto 0 auto; /* Centers the arrow */
 }
+
+/* Responsive Fix */
 @media (max-width: 768px) {
     .containerfr {
         flex-direction: column; /* Stack boxes vertically on small screens */
     }
+}
 }
 .content {
     font-size: 16px; /* Larger font size for readability */
