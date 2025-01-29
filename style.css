@@ -865,37 +865,51 @@ img {
     text-align: center;
 }
 
-/* Main container */
 .main-containerfr {
     padding: 20px;
     display: flex;
-    justify-content: center; /* Centering the cards horizontally */
+    justify-content: center; /* Centers everything horizontally */
     align-items: center;
-    flex-direction: column; /* Stack the cards vertically */
-    height: 100vh; /* Make sure the container takes the full height of the viewport */
+    flex-direction: column; /* Ensures everything stacks properly */
+    width: 100%;
 }
 
 /* Container for the cards and arrows */
 .containerfr {
     display: flex;
-    flex-direction: column; /* Stack cards vertically */
-    justify-content: center; /* Center the items vertically */
-    align-items: center; /* Align the cards horizontally */
-    gap: 20px; /* Space between the cards and arrows */
-    height: 100%; /* Take up the full container height */
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Styling for individual cards */
 .cardfr {
-    width: 350px; /* Adjust width of the cards */
-    background-color: #CCAFAF; /* White background for the card */
+    width: 300px; /* Ensures all boxes are equal */
+    min-height: 200px;
+    background-color: #CCAFAF;
     border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: relative;
+    padding: 20px;
 }
 /* Box inside each card */
+
 .boxfr {
     padding: 20px;
+}
+.arrow-down {
+    display: block;
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin: 10px auto 0 auto; /* Centers the arrow */
+}
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .containerfr {
+        flex-direction: column; /* Stack boxes vertically on small screens */
+    }
 }
 .content {
     font-size: 16px; /* Larger font size for readability */
